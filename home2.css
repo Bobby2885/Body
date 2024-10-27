@@ -1,0 +1,255 @@
+body{
+    background-color: #cad2d6;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+header{
+    text-align: center;
+    color: white;
+    height: 4em;
+    h1{
+        margin: 0;
+        padding: 5px;
+    }
+    background-color: #0072bc;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 3.5rem;
+    margin:0 0  3rem 0 ;
+    background-color:#2f80b6 ;
+}
+.nav-btn{
+    height: 2.5rem;
+    padding: 2px;
+    width: 12rem;
+    align-content: center;
+    text-align: center;
+
+}
+:hover.nav-btn{
+    border-radius: 1em;
+    box-shadow: inset 0 0 30px 5px  #5798c3 ;
+    a{
+        color: rgb(106, 228, 250);
+        font-size: 1.3rem;
+        transition: 0.2s;
+        filter: drop-shadow(0 5px 2px blue);
+    }
+    }
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+.content{
+    width: 90%;
+    margin: 10em 5% ;
+    background-color: rgb(152, 197, 236);
+    border-radius: 1em;
+}
+.cards{
+    display: flex;
+    height: 25em;
+    padding: 0.9em;
+    justify-content: space-evenly;
+    position: relative;
+   
+}
+.structure{
+    display: flex;
+}
+.card{
+    margin: 1em;
+    border-radius: 1em;
+    border:5px solid #0072bc;
+    box-shadow: inset 0 0 100px 10px #0072bc;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+}
+.image-container img {
+
+    height: 22em;
+}
+:hover.image-container {
+    filter: drop-shadow(2px 5px 10px Black);
+}
+:hover.banner {
+    border-radius: 1em 0 ;
+    filter:drop-shadow(5px 10px black);
+    h3{
+        filter: drop-shadow(2px 5px 3px blue);
+    }
+    margin: 0 0 0 2em;
+    font-size: 24px;
+    .hide{
+        display: contents;
+    }
+}
+.banner {
+    position: relative;
+    margin: 0 0 0 8em;
+    bottom: 10em;
+    padding: 0.5em 0;
+    background-color: red;
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+.contacts{
+    display: grid;
+    align-content: space-evenly;
+    justify-content: center;
+    height: 6em;
+    background-color:  #0072bc;
+
+}
+.socal-site{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    color: #ffffff;
+
+}
+:hover.socal-icon {
+    color: blue;   
+}
+.body-map{
+    height: 1000px;
+}
+.map{
+    position: absolute;
+    top: 300px;
+    left: 450px;
+}
+.full-body{
+    padding: 20px;
+}
+.parts-cards{
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    display: none;
+}
+.card-img{
+    position: absolute;
+    width: 200px;
+}
+.card-info{
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 5px;
+    background-color: #5798c3;
+    h5{
+        text-align: center;
+        color: #000;
+        margin: 10px;
+        font-size: large;
+
+    }
+}
+:hover.parts-cards{
+    .card-img{
+        filter: drop-shadow(1px -11px 12px black);
+    }
+    .card-info{
+        opacity: 1;
+        transform: scaleY(1);
+        transition: ease-in;
+    }
+}
+.card1{
+    background-color: #2f80b6;
+    position: absolute;
+    right: 500px;
+    
+}
+.card2{
+    background-color: #0080d5;
+    position: absolute;
+    right: 200px;
+    top: 400px;
+}
+.card3{
+    background-color: #2f80b6;
+    position: absolute;
+    left: 250px;
+    top: 380px;
+}
+.card4{
+    background-color: #1681c8;
+    position: absolute;
+    top: 750px;
+    left:320px;
+}
+.card5{
+    background-color: #3785b9;
+    position: absolute;
+    top: 850px;
+    right: 320px;
+
+}
+.highlight{
+    display: block;
+}
+.fullbody{
+    filter: drop-shadow(8px 3px 4px black);
+}
+.part-info{
+    width:50%;
+    margin: 20px;
+    background-color: #5798c3;
+}
+.choosepart{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 12rem 0 ;
+}
+.part{
+   display: flex;
+   justify-content: center;
+    width: 50%;
+    margin: 1rem;
+    background-color: #5798c3;
+    box-shadow: inset 0 0 100px 10px #0072bc;
+}
+.info{
+    width: 50%;
+    padding: 1rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 308px;
+    background-color: #5798c3;
+}
+.partinfo{
+    display: flex;
+    justify-content: center;
+    padding: 0 5px ;
+    margin: 0 0 10px 0;
+    align-items: center;
+    width: 100%;
+    box-shadow: inset 0 0 10px 25px #2f80b6;
+}
+:hover.partinfo{
+    box-shadow: 0 0 5px 2px #ffffff;
+    border-radius: 1rem;
+}
+.highlight {
+
+    box-shadow: 0 0 5px 2px #ffffff;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 2s ease-out;
+  }
